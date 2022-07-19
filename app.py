@@ -28,8 +28,6 @@ api.add_resource(Store, "/store/<string:name>")
 
 
 if __name__ == "__main__" :
-    from db import db
-    db.init_app(app)
     app.run(debug=True, port=5000)
 
 
